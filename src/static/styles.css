@@ -84,6 +84,13 @@ section h3 {
   gap: 8px;
 }
 
+/* Ensure participant lists don't show bullets and have no default padding/margin */
+.participant-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 .activity-card li {
   margin-bottom: 0;
   display: flex;
@@ -115,6 +122,22 @@ section h3 {
   color: #333;
   font-size: 14px;
   line-height: 1;
+}
+
+/* Remove/unregister button next to participant */
+.participant-remove {
+  margin-left: auto; /* push to the far right in flex row */
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.participant-remove:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* title for participants area */
